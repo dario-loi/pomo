@@ -1,0 +1,24 @@
+[project]
+name = "pomo"
+version = "1.0.0"
+description = "Fancy CLI pomodoro timer in python"
+authors = [
+    {name = "dario-loi", email = "dario13.loi@gmail.com"},
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "plyer>=2.1.0",
+    "dbus-python>=1.3.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm.scripts]
+pomo-timer = "src/pomo/pomo.py"
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
