@@ -29,7 +29,7 @@ def pomodoro_timer(
     while True:
         # Pomodoro session
         typer.echo(
-                f"🍅Pomodoro Timer: {duration_minutes} {t_unit} for task '{task_name}'"
+                f"🍅 Pomodoro Timer: {duration_minutes} {t_unit} for task '{task_name}'"
         )
         notification.notify(
                         title = f"Pomodoro Timer",
@@ -40,7 +40,7 @@ def pomodoro_timer(
         start_time = datetime.now()
         end_time = start_time + timedelta(minutes=duration_minutes)
 
-        with Progress(transient=True) as progress:
+        with Progress() as progress:
             task = progress.add_task(
                 f"[cyan]Progress - {task_name}...", total=duration_minutes * 60
             )
@@ -66,7 +66,7 @@ def pomodoro_timer(
         start_time = datetime.now()
         end_time = start_time + timedelta(minutes=break_time)
 
-        with Progress(transient=True) as progress:
+        with Progress() as progress:
             task = progress.add_task("[cyan]Break Progress...", total=break_time * 60)
 
             while not progress.finished:
