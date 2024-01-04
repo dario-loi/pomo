@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 
-import typer
+import base64
+import os
+import tempfile
 import time
 from datetime import datetime, timedelta
-from rich.progress import Progress
-from plyer import notification
+
 import playsound
-import os
-import base64
-import tempfile
+import typer
+from plyer import notification
+from rich.progress import Progress
 
 app = typer.Typer(no_args_is_help=True)
 

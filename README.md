@@ -1,15 +1,16 @@
+# `pomo`
 
-Table of Contents
-=================
+## Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [`pomo`](#pomo)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
   - [Installation](#installation)
   - [Usage](#usage)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 
-# `pomo`
+## Introduction
 
 A fancy terminal-based [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) timer.
 
@@ -21,7 +22,7 @@ alert you with desktop notifications when the timer is over thanks to the cross-
 also play a bell sound when it starts a new task/break session, so that you never miss it!
 
 ![pomo](carbon.png)
-*The pomo timer in action*
+_The pomo timer in action_
 
 ## Installation
 
@@ -47,11 +48,11 @@ Running the command `pomo --help` will show you the available options, this is q
 
 ```zsh
 ❯ pomo --help
-                                                                                                                                                                                    
- Usage: pomo [OPTIONS] [DURATION] [TASK_NAME] [BREAK_TIME]                                                                                                                          
-                                                                                                                                                                                    
- Start the Pomodoro timer.                                                                                                                                                          
-                                                                                                                                                                                    
+
+ Usage: pomo [OPTIONS] [DURATION] [TASK_NAME] [BREAK_TIME]
+
+ Start the Pomodoro timer.
+
 ╭─ Arguments ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │   duration        [DURATION]    Duration of the Pomodoro session in minutes. [default: 25]                                                                                       │
 │   task_name       [TASK_NAME]   Name of the task for the Pomodoro session. [default: Pomodoro]                                                                                   │
