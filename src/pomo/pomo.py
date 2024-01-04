@@ -61,7 +61,7 @@ def pomodoro_timer(
             f"🍅 Pomodoro Timer: {duration_minutes} {t_unit} for task '{task_name}'"
         )
         notification.notify(
-            title=f"Pomodoro Timer",
+            title="Pomodoro Timer",
             message=f"⏳ Starting {duration_minutes} {t_unit} timer for task '{task_name}'",
             timeout=8,
         )
@@ -87,7 +87,7 @@ def pomodoro_timer(
                     )
                     bell()
                     notification.notify(
-                        title=f"Pomodoro Timer",
+                        title="Pomodoro Timer",
                         message=f"{task_name} completed!\nTaking a {break_time}-minute break...",
                         timeout=8,
                     )
